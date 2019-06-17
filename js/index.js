@@ -41,6 +41,8 @@ const siteContent = {
 let logo = document.getElementById("logo-img");
 logo.setAttribute('src', siteContent["nav"]["img-src"])
 
+// letnewAtag = document.querySelector('nav');
+// newATag.append
 let navItem1 = document.querySelector('nav > a:first-child');
 navItem1.textContent = siteContent["nav"]["nav-item-1"];
 
@@ -59,10 +61,24 @@ navItem1.textContent = siteContent["nav"]["nav-item-5"];
 let navItem6 = document.querySelector('nav > a:nth-child(6)');
 navItem6.textContent = siteContent["nav"]['nav-item-6'];
 
-let grIdea = document.getElementById("logo-img");
-grIdea.src = "https://images.unsplash.com/photo-1540957904852-c2184978df5e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60";
+let cta = document.getElementById("cta-img");
+cta.setAttribute('src', siteContent['cta']['img-src']);
 
+let ctah1 = document.querySelector('.cta  .cta-text  h1');
+ctah1.textContent = siteContent['cta']['h1'];
 
-// ocument.getElementByTagName('')
+let textContentPara = document.querySelectorAll('.textContent');
+textContentPara[0].textContent = siteContent['main-content']['features - content'];
+textContentPara[1].textContent = siteContent['main-content']['about - content'];
+textContentParag[2].textContent = siteContent['main-content']['services - content'];
+textContentParag[3].textContent = siteContent['main-content']['product - content'];
+textContentParag[4].textContent = siteContent['main-content']['vision - content'];
 
-// Image.src = "http.",
+let middleimg = document.querySelector('.maincontent .middle-img');
+
+let textContentMain = document.querySelectorAll('.textContent');
+textContentMain[0].textContent = siteContent['main-content']['features - h4'];
+textContentMain[1].textContent = siteContent['main-content']['about - h4'];
+textContentMain[2].textContent = siteContent['main-content']['services - h4'];
+textContentMain[3].textContent = siteContent['main-content']['product - h4'];
+textContentMain[4].textContent = siteContent['main-content']['vision - h4'];
