@@ -39,19 +39,35 @@ const siteContent = {
 
 // Example: Update the img src for the logo
 let logo = document.getElementById("logo-img");
-logo.setAttribute('src', siteContent["nav"]["img-src"])
+logo.setAttribute('src', siteContent["nav"]["img-src"]);
 
-// let newATag = document.querySelector('nav');
-// newATag.appendChild('nav') = (<a href = "#"> New Item </a>;
-// let anotherNewTag = document.querySelector('nav');
 
-let textContentNav = document.querySelectorAll('a');
+let textContentNav = document.querySelector('nav').children;
 textContentNav[0].textContent = siteContent["nav"]["nav-item-1"];
 textContentNav[1].textContent = siteContent["nav"]["nav-item-2"];
 textContentNav[2].textContent = siteContent["nav"]["nav-item-3"];
 textContentNav[3].textContent = siteContent["nav"]["nav-item-4"];
 textContentNav[4].textContent = siteContent["nav"]["nav-item-5"];
 textContentNav[5].textContent = siteContent["nav"]['nav-item-6'];
+
+
+//changes to nav color
+for (let i = 0; i < 6; i++) {
+    textContentNav[i].style.color = 'green';
+};
+
+// added new a tags
+const newATag = document.querySelector('nav');
+const newAnchor1 = document.createElement('a');
+const newAnchor2 = document.createElement('a');
+newAnchor1.textContent = 'New Item';
+newAnchor2.textContent = 'SALE';
+newATag.appendChild(newAnchor1);
+newATag.prepend(newAnchor2);
+
+newAnchor1.style.color = 'green';
+newAnchor2.style.color = 'green';
+
 
 let cta = document.getElementById("cta-img");
 cta.setAttribute('src', siteContent['cta']['img-src']);
@@ -68,10 +84,13 @@ textContentPara[1].textContent = siteContent['main-content']['about-content'];
 textContentPara[2].textContent = siteContent['main-content']['services-content'];
 textContentPara[3].textContent = siteContent['main-content']['product-content'];
 textContentPara[4].textContent = siteContent['main-content']['vision-content'];
-
+textContentPara[5].textContent = siteContent['contact']['address'];
+textContentPara[6].textContent = siteContent['contact']['phone'];
+textContentPara[7].textContent = siteContent['contact']['email'];
+textContentPara[8].textContent = siteContent['footer']['copyright'];
 
 let midImg = document.getElementById("middle-img");
-midImg.setAttribute('src', siteContent['main-content']['mid-img-src']);
+midImg.setAttribute('src', siteContent['main-content']['middle-img-src']);
 
 let textContentMain = document.querySelectorAll('h4');
 textContentMain[0].textContent = siteContent['main-content']['features-h4'];
@@ -81,12 +100,12 @@ textContentMain[3].textContent = siteContent['main-content']['product-h4'];
 textContentMain[4].textContent = siteContent['main-content']['vision-h4'];
 
 let textContentH = document.querySelector('.contact h4');
-textContentH[0].textContent = siteContent['contact']['contact-h4'];
+textContentH.textContent = siteContent['contact']['contact-h4'];
 
-let textContentP = document.querySelectorAll('p');
-textContentP[0].textContent = siteContent['contact']['address'];
-textContentP[1].textContent = siteContent['contact']['phone'];
-textContentP[2].textContent = siteContent['contact']['email'];
+// let textContentP = document.querySelectorAll('p');
+// textContentP[0].textContent = siteContent['contact']['address'];
+// textContentP[1].textContent = siteContent['contact']['phone'];
+// textContentP[2].textContent = siteContent['contact']['email'];
 
-let footer = document.querySelector('p');
-footer.textContent = siteContent['footer']['copyright'];
+// let footer = document.querySelector('p');
+// textContentPara[8].textContent = siteContent['footer']['copyright'];
