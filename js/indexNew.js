@@ -47,7 +47,7 @@ nav[5].textContent = siteContent['nav']['nav-item-6'];
 //nav logo
 let logo = document.getElementById('logo-img');
 logo.setAttribute('src', siteContent['nav']['img-src']);
-//middle content
+//top content
 let ctaH = document.querySelector('.cta-text h1');
 ctaH.textContent = siteContent['cta']['h1'];
 
@@ -56,3 +56,19 @@ ctaButton.textContent = siteContent['cta']['button'];
 
 let ctaImg = document.getElementById('cta-img');
 ctaImg.setAttribute('src', siteContent['cta']['img-src']);
+
+//middle content
+
+let topmainContent = document.querySelectorAll('.text-content h4');
+topmainContent[0].textContent = siteContent['main-content']['features-h4'];
+topmainContent[1].textContent = siteContent['main-content']['about-h4'];
+topmainContent[2].textContent = siteContent['main-content']['services-h4'];
+topmainContent[3].textContent = siteContent['main-content']['product-h4'];
+topmainContent[4].textContent = siteContent['main-content']['vision-h4'];
+
+let mainContent = document.querySelectorAll('.text-content p');
+mainContent[0].textContent = siteContent['main-content']['features-content'];
+mainContent[1].textContent = siteContent['main-content']['about-content'];
+mainContent[2].textContent = siteContent['main-content']['services-content'];
+mainContent[3].textContent = siteContent['main-content']['product-content'];
+mainContent[4].textContent = siteContent['main-content']['vision-content'];
