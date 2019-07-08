@@ -36,6 +36,11 @@ const siteContent = {
         "copyright": "Copyright Great Idea! 2018"
     },
 };
+
+//nav logo
+let logo = document.getElementById('logo-img');
+logo.setAttribute('src', siteContent['nav']['img-src']);
+
 //nav bar
 let nav = document.querySelectorAll('a');
 nav[0].textContent = siteContent['nav']['nav-item-1'];
@@ -44,9 +49,25 @@ nav[2].textContent = siteContent['nav']['nav-item-3'];
 nav[3].textContent = siteContent['nav']['nav-item-4'];
 nav[4].textContent = siteContent['nav']['nav-item-5'];
 nav[5].textContent = siteContent['nav']['nav-item-6'];
-//nav logo
-let logo = document.getElementById('logo-img');
-logo.setAttribute('src', siteContent['nav']['img-src']);
+
+//green nav color
+for (i = 0; i < 6; i++) {
+    nav[i].style.color = 'green';
+};
+
+//appended tags
+let newTag = document.querySelector('nav');
+let newTag1 = document.createElement('a');
+let newTag2 = document.createElement('a');
+newTag1.textContent = 'More';
+newTag2.textContent = 'Mas';
+newTag.appendChild(newTag1);
+newTag.prepend(newTag2);
+
+newTag1.style.color = 'green';
+newTag2.style.color = 'green';
+
+
 //top content
 let ctaH = document.querySelector('.cta-text h1');
 ctaH.textContent = siteContent['cta']['h1'];
@@ -83,3 +104,6 @@ let contacts = document.querySelectorAll('.contact p');
 contacts[0].textContent = siteContent['contact']['address'];
 contacts[1].textContent = siteContent['contact']['phone'];
 contacts[2].textContent = siteContent['contact']['email'];
+
+let footer = document.querySelector('footer p');
+footer.textContent = siteContent['footer']['copyright'];
