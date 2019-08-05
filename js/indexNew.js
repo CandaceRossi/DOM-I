@@ -54,3 +54,11 @@ navBar[2].textContent = siteContent["nav"]["nav-item-3"];
 navBar[3].textContent = siteContent["nav"]["nav-item-4"];
 navBar[4].textContent = siteContent["nav"]["nav-item-5"];
 navBar[5].textContent = siteContent["nav"]["nav-item-6"];
+
+//top content
+let header = document.querySelector(".cta-text h1");
+header.textContent = siteContent["cta"]["h1"];
+let button = document.querySelector(".cta-text button");
+button.textContent = siteContent["cta"]["button"];
+let topImg = document.getElementById("cta-img");
+topImg.setAttribute("src", siteContent["cta"]["img-src"]);
