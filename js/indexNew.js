@@ -64,7 +64,6 @@ let topImg = document.getElementById("cta-img");
 topImg.setAttribute("src", siteContent["cta"]["img-src"]);
 
 //main content
-
 let titles = document.querySelectorAll(".text-content h4");
 titles[0].textContent = siteContent["main-content"]["features-h4"];
 titles[1].textContent = siteContent["main-content"]["about-h4"];
@@ -78,3 +77,19 @@ paragraphs[1].textContent = siteContent["main-content"]["about-content"];
 paragraphs[2].textContent = siteContent["main-content"]["services-content"];
 paragraphs[3].textContent = siteContent["main-content"]["product-content"];
 paragraphs[4].textContent = siteContent["main-content"]["vision-content"];
+
+let midImg = document.getElementById("middle-img");
+midImg.setAttribute("src", siteContent["main-content"]["middle-img-src"]);
+
+//Contact info
+let contact = document.querySelectorAll(".contact h4");
+contact[0].textContent = siteContent["contact"]["contact-h4"];
+
+let contacts = document.querySelectorAll(".contact p");
+contacts[0].textContent = siteContent["contact"]["address"];
+contacts[1].textContent = siteContent["contact"]["phone"];
+contacts[2].textContent = siteContent["contact"]["email"];
+
+//footer
+let footer = document.querySelector("footer p");
+footer.textContent = siteContent["footer"]["copyright"];
