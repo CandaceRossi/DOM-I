@@ -71,3 +71,10 @@ titles[1].textContent = siteContent["main-content"]["about-h4"];
 titles[2].textContent = siteContent["main-content"]["services-h4"];
 titles[3].textContent = siteContent["main-content"]["product-h4"];
 titles[4].textContent = siteContent["main-content"]["vision-h4"];
+
+let paragraphs = document.querySelectorAll(".text-content p");
+paragraphs[0].textContent = siteContent["main-content"]["features-content"];
+paragraphs[1].textContent = siteContent["main-content"]["about-content"];
+paragraphs[2].textContent = siteContent["main-content"]["services-content"];
+paragraphs[3].textContent = siteContent["main-content"]["product-content"];
+paragraphs[4].textContent = siteContent["main-content"]["vision-content"];
