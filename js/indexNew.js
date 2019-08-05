@@ -69,6 +69,9 @@ navA2.textContent = "Got it";
 nav.appendChild(navA1);
 nav.prepend(navA2);
 
+navA1.style.color = "green";
+navA2.style.color = "green";
+
 //top content
 let header = document.querySelector(".cta-text h1");
 header.textContent = siteContent["cta"]["h1"];
