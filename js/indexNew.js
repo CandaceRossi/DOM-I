@@ -55,6 +55,20 @@ navBar[3].textContent = siteContent["nav"]["nav-item-4"];
 navBar[4].textContent = siteContent["nav"]["nav-item-5"];
 navBar[5].textContent = siteContent["nav"]["nav-item-6"];
 
+for (i = 0; i < 6; i++) {
+  navBar[i].style.color = "green";
+}
+
+let nav = document.querySelector("nav");
+let navA1 = document.createElement("a");
+let navA2 = document.createElement("a");
+
+navA1.textContent = "Get it";
+navA2.textContent = "Got it";
+
+nav.appendChild(navA1);
+nav.prepend(navA2);
+
 //top content
 let header = document.querySelector(".cta-text h1");
 header.textContent = siteContent["cta"]["h1"];
